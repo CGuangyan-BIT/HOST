@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/host_icon_v2.png" width="200" alt="HOST method icon: a robot learns a manipulation skill from a human demonstration">
+  <img src="assets/ICON.png" width="200" alt="HOST method icon: a human demonstration transfers a manipulation skill to a robot">
 </p>
 
 # HOST: Robots Acquire Manipulation Skills in Seconds from a Single Human Video
@@ -65,7 +65,10 @@ weights, previously mastered skills are retained.
 - **Inference-time skill acquisition:** one human video, no fine-tuning, and no parameter update.
 - **Fast acquisition:** 29 seconds per novel skill on average, including recording the
   demonstration.
-- **Broad real-robot evaluation:** 62% average success across 50 novel manipulation tasks.
+- **Broad real-robot evaluation:** acquires executable skills across 50 novel manipulation tasks,
+  each evaluated over 20 trials.
+- **Strong novel-task performance:** achieves 62% average success on the task subset used for
+  baseline comparisons.
 - **Data and time efficiency:** 50 times fewer demonstrations and 507 times faster acquisition
   than the strongest task-specific fine-tuning baseline evaluated in the paper.
 - **Skill retention:** new skills are supplied through external video context rather than written
