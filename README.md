@@ -11,7 +11,9 @@
 <p align="center">
   <a href="https://arxiv.org/abs/2607.20033">arXiv</a>
   ·
-  <a href="https://huggingface.co/papers/2607.20033">Hugging Face</a>
+  <a href="https://huggingface.co/papers/2607.20033">Hugging Face Paper</a>
+  ·
+  <a href="https://huggingface.co/Guangyan/HOST">Model Weights</a>
   ·
   <a href="https://host-site.host-robotics.workers.dev/">Project Website</a>
   ·
@@ -28,6 +30,9 @@
   </a>
   <a href="https://huggingface.co/papers/2607.20033">
     <img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Paper-ffd21e.svg" alt="Hugging Face paper">
+  </a>
+  <a href="https://huggingface.co/Guangyan/HOST">
+    <img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Model%20Weights-ffd21e.svg" alt="HOST model weights">
   </a>
   <a href="https://host-site.host-robotics.workers.dev/">
     <img src="https://img.shields.io/badge/Project-Website-2563eb" alt="Project website">
