@@ -1,0 +1,114 @@
+{
+    "/x2robot_data/zhengwei/10042": {
+        "action_keys": ["master_left_position", "master_left_rotation", "master_left_gripper", "master_right_position", "master_right_rotation", "master_right_gripper"],
+        "joint_keys": ["follow_left_position", "follow_left_rotation", "follow_left_gripper", "follow_right_position", "follow_right_rotation", "follow_right_gripper"],
+        "norm_min_delta": {
+            "follow_left_position": {
+                "min": [-0.1, -0.5, -0.5],
+                "delta": [0.6, 1.0, 1.0]
+            },
+            "follow_left_position_relative": {
+                "min": [-0.2, -0.2, -0.2],
+                "delta": [0.4, 0.4, 0.4]
+            },
+            "follow_left_rotation": {
+                "min": [-1.5, -1.5, -2.0],
+                "delta": [3.0, 3.0, 3.5]
+            },
+            "follow_left_gripper": {
+                "min": [-0.5],
+                "delta": [6.5]
+            },
+            "follow_right_position": {
+                "min": [-0.1, -0.5, -0.5],
+                "delta": [0.6, 1.0, 1.0]
+            },
+            "follow_right_position_relative": {
+                "min": [-0.2, -0.2, -0.2],
+                "delta": [0.4, 0.4, 0.4]
+            },
+            "follow_right_rotation": {
+                "min": [-1.5, -1.5, -2.0],
+                "delta": [3.0, 3.0, 3.5]
+            },
+            "follow_right_gripper": {
+                "min": [-0.5],
+                "delta": [6.5]
+            },
+            
+            "master_left_position": {
+                "min": [-0.1, -0.5, -0.5],
+                "delta": [0.6, 1.0, 1.0]
+            },
+            "master_left_position_relative": {
+                "min": [-0.2, -0.2, -0.2],
+                "delta": [0.4, 0.4, 0.4]
+            },
+            "master_left_rotation": {
+                "min": [-1.5, -1.5, -2.0],
+                "delta": [3.0, 3.0, 3.5]
+            },
+            "master_left_gripper": {
+                "min": [-0.5],
+                "delta": [6.5]
+            },
+            "master_right_position": {
+                "min": [-0.1, -0.5, -0.5],
+                "delta": [0.6, 1.0, 1.0]
+            },
+            "master_right_position_relative": {
+                "min": [-0.2, -0.2, -0.2],
+                "delta": [0.4, 0.4, 0.4]
+            },
+            "master_right_rotation": {
+                "min": [-1.5, -1.5, -2.0],
+                "delta": [3.0, 3.0, 3.5]
+            },
+            "master_right_gripper": {
+                "min": [-0.5],
+                "delta": [6.5]
+            },
+
+            "follow_left_joint_pos": {
+                "min": [
+                    -1.0004196166992188,
+                    -0.01010894775390625,
+                    -2.13034169626236,
+                    -1.2964448928833008,
+                    -0.9222173690795898,
+                    -1.490569982767105,
+                    -0.047303199768066406
+                ],
+                "delta": [
+                    1.541625355720555,
+                    2.6909284591674805,
+                    4.820316481113434,
+                    2.583530866861352,
+                    2.182040214538574,
+                    2.911375794649124,
+                    4.545472145080566
+                ]
+            },
+            "follow_right_joint_pos": {
+                "min": [
+                    -0.6284809112548828,
+                    -0.0025048566479235882,
+                    -2.2265419239997866,
+                    -1.2980839014053345,
+                    -1.2224388122558594,
+                    -1.4510086886882783,
+                    -0.0652322769165039
+                ],
+                "delta": [
+                    1.640726089477539,
+                    2.7978779860157696,
+                    5.09962503862381,
+                    2.5521847009658813,
+                    2.2317093586922567,
+                    3.179283987760544,
+                    4.570649147033691
+                ]
+            }
+        }
+    }
+}

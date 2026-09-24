@@ -153,6 +153,7 @@ Start with the module that matches your goal:
 | Train or evaluate the progress-alignment model | [`alignment/README.md`](./alignment/README.md) |
 | Materialize aligned progress labels | [`coupling/README.md`](./coupling/README.md) |
 | Train or evaluate the policy | [`policy_training/README.md`](./policy_training/README.md) |
+| Interpret real-robot action fields and normalization (中文) | [`格式说明/README.md`](./格式说明/README.md) |
 | Read the policy documentation in Chinese | [`policy_training/README_zh.md`](./policy_training/README_zh.md) |
 
 ## Getting started
@@ -319,6 +320,11 @@ A dataset-level episode-list JSON, camera mapping, and action-normalization mapp
 required. Field definitions, path conventions, examples, and the differences between alignment
 and policy training are documented in
 [`data_preprocessing/README.md`](./data_preprocessing/README.md).
+
+For real open-loop inference, see [joint/action mapping and action format (中文)](./格式说明/README.md)
+for field order, normalization, relative-pose decoding, and a
+[single mapping example](./格式说明/10042_joint_action_mapping.json). Normalization ranges are
+dataset-specific; inference must use the mapping associated with training.
 
 ## Compute requirements
 

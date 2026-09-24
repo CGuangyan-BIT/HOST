@@ -129,24 +129,27 @@ view names on disk:
 
 ### 2.4. Joint/action normalization — `{joint_action_mapping_dir}/{dataset_id}_joint_action_mapping.json`
 
-Declares which fields to read from `episode_001.json` and their per-dimension min/delta used to
-normalize to `[-1, 1]` (`norm = 2*(raw - min)/delta - 1`):
+Declares the ordered input-state fields (`joint_keys`), output-action fields (`action_keys`),
+and per-field `min` / `delta` parameters. The file has an outer dataset-path mapping:
 
-```json
+```text
 {
-  "action_keys": ["follow_left_position", "follow_left_rotation", "follow_left_gripper",
-                   "follow_right_position", "follow_right_rotation", "follow_right_gripper"],
-  "joint_keys": ["left_rotation", "right_rotation", "left_position", "right_position"],
-  "norm_min_delta": {
-    "follow_left_position": {"min": [-0.08, -0.08, -0.08], "delta": [0.16, 0.16, 0.16]},
-    "follow_left_rotation": {"min": [-0.30, -0.30, -0.30], "delta": [0.60, 0.60, 0.60]},
-    "follow_left_gripper":  {"min": [-0.5], "delta": [6.5]}
+  "<dataset path prefix>": {
+    "action_keys": [...],
+    "joint_keys": [...],
+    "norm_min_delta": {"<field>": {"min": [...], "delta": [...]}}
   }
 }
 ```
 
-Both modules point their `joint_action_mapping_dir`/`JOINT_ACTION_MAPPING_DIR` config at the same
-directory and read this exact `action_keys`/`joint_keys`/`norm_min_delta` structure.
+See the complete [mapping example](../格式说明/10042_joint_action_mapping.json) and
+[action-format guide (中文)](../格式说明/README.md) for the dual-arm field order, 6D rotations,
+relative actions, normalization formulas, and entry-selection behavior. Ranges can differ
+between datasets; the example is not a universal checkpoint normalization configuration.
+Use the mapping associated with training when running inference.
+
+Both modules configure the directory containing these files through
+`joint_action_mapping_dir` / `JOINT_ACTION_MAPPING_DIR`.
 
 ### 2.5. Remaining per-dataset config fields (`policy_training/` only)
 
